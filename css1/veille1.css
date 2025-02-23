@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image:url(imgduo/store.png);
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-left a, .nav-right a {
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-center img {
+  max-width: 250px; /* Ajustez la largeur maximale de votre logo selon vos besoins */
+}
+a:hover{
+	color:orange;
+}
+.carte{
+	width:350px;
+	height:400px;
+	background-color:white;
+	border-radius:10px;
+	box-shadow:2px 10px 12px;
+	display:inline-block;
+	flex-direction:column;
+	align-items:left;
+	justify-content:center;
+	box-sizing:border-box;
+	margin:20px;
+}
+.modele{
+	height:250px;
+	max-height:100%;
+	max-width:100%;
+  justify-content:center ;
+}
+.detail{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:300px;
+}
+.detail p{
+  color:black;
+text-align: center;
+margin-top:20px;
+}
+.casque{
+  font-size:15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top:15px;
+}
+footer{
+  flex-shrink: 0;
+  border-top:1px dashed #000;
+  width:101%;
+  background: #000;
+  color: white;
+}
+.contenu-footer{
+  width: 700px;
+  margin-top: 0 auto;
+  display: inline-block;
+ font-size: 20px;
+ padding: 10px;
+ justify-content: right;
+ align-items:right;
+}
+li {
+  display: inline-block; /*  selon ma préférences */
+  margin-right: 20px; /* Ajustez selon l'espace souhaité entre les éléments */
+}
+
+

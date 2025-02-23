@@ -1,0 +1,130 @@
+body{
+    background-image:url(imgduo/store.png);
+}
+.Contact{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1000px;
+    margin-top: -40px;
+    font-size: larger;
+}
+.Contact:hover{
+    color: orange;
+}
+.Accueil{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1200px;
+    margin-top: -41px;
+    font-size: larger;
+}
+.Accueil:hover{
+    color: orange;
+}
+.Store{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1400px;
+    margin-top: -41px;
+    font-size: larger;
+}
+.Store:hover{
+    color: orange;
+}
+.logoentreprise{
+    margin-top: -50px;
+}
+.minilogo{
+    margin-left: 90%;
+    margin-top: -70px;
+}
+.header{
+    margin-top: -10px;
+    width: 100.5%;
+    height: 10%;
+    background-color: black;
+} 
+.element{
+    background-color: #ffffffcc;
+	margin-top :  100px;
+	margin-left: 50px;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 15%;
+    height: 11%;
+    padding-bottom: 23%;
+}
+.icon{
+    margin-top: -40%;
+}
+.paniertxt{
+    margin-top: -27%;
+    font-family: sans-serif;
+}
+h1{
+    color: white;
+}
+
+.payer{
+    margin-top: 300px;
+    max-width: 20%;
+    background-color: green;
+    border-radius: 5%;
+    padding: 2%;
+
+}
+button{
+    margin-top: 300px;
+    width: 20%;
+    height: 45px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+
+}
+.payer:hover{
+    width: 20%;
+    height: 45px;
+    background-color: green;
+}
+.panier{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 100vh;
+}
+.panier img{
+    width:40px;
+    padding:8px 0;
+}
+.panier section{
+    width:150px;
+    background-color: white;
+    padding:210px;
+    border-radius:100px; 
+}
+table{
+    border-collapse:collapse;
+    width:100%;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+th{
+    padding: 10px;
+    font-weight: 400;
+}
+td{
+    border-top: 1px solid black;
+    text-align: center;
+    color:blue;
+}
+tr{
+    border-bottom:1px solid black;
+}
+.total th{
+    border:0;
+    float:left;
+    font-weight: 500;
+    color:blue;
+    padding:10px;
+}

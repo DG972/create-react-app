@@ -1,0 +1,812 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #120d16;
+    padding: 14px 0;
+    margin: 0;
+    position: fixed; /* Fixe la barre de navigation sur le côté */
+    top: 0;
+    left: 0; /* Mettre `right: 0;` pour le côté droit */
+    height: 100vh; /* Assure que la barre occupe toute la hauteur */
+    width: 164px; /* Largeur de la barre de navigation */
+    overflow-y: auto; /* Ajoute un défilement si le contenu est trop grand */
+}
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+    font-size: 22px;
+    color: #fff;
+}
+
+.nav li {
+    margin: 20px 0; /* Espacement entre les éléments */
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out; /* Effet fluide lors du survol */
+}
+
+.nav li a:hover {
+    color: #ECC440; /* Changement de couleur au survol */
+}
+
+/* Section principale */
+.info {
+    min-height: 85vh; /* Assure que l'arrière-plan couvre toute la hauteur de l'écran */
+    margin-left: 165px; /* Évite que le contenu soit sous la nav */
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; /* Espacement équilibré du texte */
+    align-items: center; /* Centre horizontalement */
+    text-align: center;
+    padding: 38px; /* Ajoute de l’espace autour du contenu */
+}
+
+/* Style des titres et paragraphes */
+.info h1, .info h2, .info p {
+    color: #fff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ajoute une ombre pour améliorer la lisibilité */
+}
+
+.info h1 {
+    font-size: 55px; /* Taille plus grande pour plus d’impact */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info h2 {
+    font-size: 42px; /* Taille réduite pour différencier du H1 */
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 24px; /* Taille plus lisible */
+    max-width: 800px; /* Évite que le texte soit trop étalé sur les grands écrans */
+    line-height: 1.6; /* Améliore l’espacement des lignes */
+    padding: 0 20px;
+}
+
+.profil{
+    margin: 9%;
+    padding: 0%;
+}
+.profil h1 {
+    color:#0056B3; /* Noir élégant */
+    font-size: 32px; /* Augmentation pour plus d'impact */
+    text-align: center;
+    margin-left: 184px; /* Suppression du décalage pour meilleur centrage */
+    margin-bottom: 10px; /* Ajout d'un petit espace sous le titre */
+}
+
+.profil p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 19%;
+    color: #444444; /* Gris foncé pour du confort visuel */
+}
+
+.carton {
+    padding: 12px 24px;
+    background-color: #007BFF; /* Bleu vif pour un design pro */
+    width: fit-content; /* Ajuste la largeur au contenu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 434px;
+    border-radius: 8px; /* Coins légèrement arrondis */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+.carton:hover {
+    background-color: #0056B3; /* Bleu plus foncé au survol */
+    transform: scale(1.05); /* Effet zoom léger au survol */
+}
+
+.carton p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase; /* Texte en majuscules pour plus d’impact */
+}
+.profil h2 {
+    color: #0056B3;
+    font-size: 34px;
+    text-align: center;
+    margin-top: inherit;
+    margin-left: 15%;
+    
+}
+#formation {
+    color: #007BFF; /* Bleu vif pour une apparence plus dynamique */
+    font-size: 36px; /* Taille de texte légèrement plus grande pour attirer l'attention */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text1, .text2 {
+    font-family: "Open Sans", sans-serif;
+    color: #333; /* Gris foncé pour une meilleure lisibilité */
+    font-size: 18px;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.text2 {
+    font-size: 20px;
+}
+
+.text3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+    color: #0056B3; /* Bleu profond pour un contraste élégant */
+    text-align: center;
+    margin-top: 4%;
+}
+
+.formation {
+    background-color: #f0f4f8; /* Fond plus doux, légèrement gris clair */
+    padding: 30px;
+    margin: 5% auto;
+    width: 80%;
+    text-align: justify;
+    box-shadow: none; /* Retiré l'ombre portée pour un look plus propre */
+    border-radius: 8px;
+}
+
+.subheading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    color: #0056B3;
+    margin-top: 15px;
+    text-align: left; /* Alignement à gauche pour les sous-titres */
+}
+
+.formation ul {
+    list-style-type: disc;
+    padding-left: 30px; /* Rapprochement des points de la liste */
+    font-size: 18px;
+    color: #333; /* Gris plus clair pour les éléments de la liste */
+    margin-left: 15%; /* Centrer le texte des listes */
+    margin-right: 15%;
+}
+
+.formation ul li {
+    margin-bottom: 12px; /* Espacement entre les éléments de la liste */
+}
+
+
+
+.competences {
+    margin-top: 7%;
+    text-align: center;
+    font-family: "Open Sans", sans-serif; /* Remise de la police d'origine */
+}
+
+.competences h2 {
+    color: #D8532B;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+
+/* Langages Pratiques */
+.nav2 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.nav2 li {
+    font-size: 13px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+/* Outils Utilisés */
+.nav3 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 77%;
+    margin: 20px auto;
+}
+
+.nav3 li {
+    font-size: 21px;
+}
+
+/* === SECTION COMPÉTENCES === */
+.competences {
+    text-align: center;
+    font-family: "Open Sans", sans-serif; /* Police conservée */
+}
+
+.competences h2 {
+    color: #D8532B;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.competences p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* === ALIGNEMENT HORIZONTAL DES BLOCS === */
+.competence-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.competence-box {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    width: 30%; /* Ajusté pour éviter l'effet trop large sur grand écran */
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.competence-box h2 {
+    color:#0056B3;
+    font-size: 24px;
+}
+
+.competence-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.competence-box li {
+    font-size: 18px;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+}
+
+.competence-box li::before {
+    content: "⚡"; /* Icône par défaut */
+    margin-right: 10px;
+}
+
+.competence-box li:nth-child(1)::before {
+    content: "🐧"; /* Linux */
+}
+
+.competence-box li:nth-child(2)::before {
+    content: "🪟"; /* Windows */
+}
+
+.competence-box li:nth-child(3)::before {
+    content: "📱"; /* Android */
+}
+
+.certification-container {
+    display: flex;
+    justify-content: flex-start; /* Aligner les cartes à gauche */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    width: 90%;
+    margin-left: 20%; /* Décalage vers la droite */
+}
+
+/* Style des cartes de certification */
+.card-certifications {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    width: 22%;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.card-certifications:hover {
+    background: #ECC440;
+    color: white;
+}
+
+/* Style des liens */
+.card-certifications a {
+    text-decoration: none;
+    color: #0056B3;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Effet au survol */
+.card-certifications a:hover {
+    color:#ECC440;
+}
+.Projets {
+    margin-top: 11%;
+}
+
+/* Titre principal centré */
+.Projets h2 {
+    color: #D8532B;
+    font-size: 34px;
+    text-align: center;
+}
+
+/* Sous-titres alignés */
+.Projets p {
+    font-family: "Open Sans, sans-serif";
+    font-size: 20px;
+    margin-left: 5%;
+    text-align: center;
+}
+
+/* Conteneur des images de la 1ʳᵉ année en horizontal */
+.card-container {
+    display: flex;
+    justify-content: flex-start; /* Aligné à gauche */
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 21%;
+}
+
+/* Style des cartes */
+.card2 {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+/* Ajustement des images */
+.card2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Conteneur pour la 2ᵉ année */
+.projets-2eme-annee {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+/* Cartes des projets de la 2ᵉ année */
+.card3 {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style des liens */
+.card3 a {
+    text-decoration: none;
+    color: #D8532B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Effet au survol */
+.card3 a:hover {
+    color: #A33D1F;
+}
+.entreprise {
+    margin-top: 11%;
+}
+
+/* Titre principal */
+.entreprise h2 {
+    color: #D8532B;
+    font-size: 34px;
+    text-align: center;
+}
+
+/* Sous-titres */
+.entreprise h3 {
+    text-align: center;
+    font-family: "Open Sans, sans-serif";
+    font-size: 22px;
+    margin-top: 8%;
+    color: #333;
+}
+.entreprise p {
+    text-align: center;
+}
+
+/* Conteneur pour chaque stage */
+.stage-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px auto;
+    width: 80%;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image du logo de l'entreprise */
+.stage-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 108px;
+}
+
+/* Contenu du stage */
+.stage-content {
+    flex: 1;
+}
+
+/* Titres des stages */
+.stage-content h4 {
+    font-size: 27px;
+    color: #D8532B;
+    margin-bottom: 10px;
+}
+
+/* Textes */
+.stage-content p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Bouton rapport de stage */
+.btn-rapport {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+    background: #D8532B;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-left: 193px;
+}
+
+.btn-rapport:hover {
+    background: #A33D1F;
+}
+/* Section principale */
+.techno {
+    margin-top: 11%;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Titre principal */
+.techno h1 {
+    color: #D8532B;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Sous-titres */
+.techno-section h2 {
+    font-size: 28px;
+    color: #0056B3;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Paragraphes */
+.techno p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 157px;
+
+}
+
+/* Listes */
+.techno-section ul {
+    list-style: none;
+    padding: 0;
+    font-size: 20px;
+    margin-left: 155px;
+}
+
+.techno-section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.techno-section ul li::before {
+    content: "✔️";
+    margin-right: 10px;
+}
+
+/* Liens */
+.techno-section a {
+    text-decoration: none;
+    color: #D8532B;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.techno-section a:hover {
+    color: #A33D1F;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .techno {
+        padding: 20px;
+    }
+
+    .techno h1 {
+        font-size: 28px;
+    }
+
+    .techno-section h2 {
+        font-size: 24px;
+    }
+
+    .techno p, .techno-section ul li {
+        font-size: 18px;
+    }
+}
+
+
+/* Section Contact */
+.contact {
+    margin-top: 11%;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #D8532B;
+    font-size: 34px;
+}
+
+.contact p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    margin-left: 210px;
+}
+
+/* Carte du formulaire */
+.card4 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 40px;
+    width: 40%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.card4 h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Bouton */
+.card4 button {
+    padding: 12px;
+    background: #D8532B;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card4 button:hover {
+    background: #A33D1F;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .card4 {
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+/* Styles pour les écrans moyens (tablettes) */
+@media (max-width: 768px) {
+    nav {
+        width: 160px;
+    }
+
+    .info {
+        margin-left: 180px;
+    }
+
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .info h2 {
+        font-size: 28px;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .profil h1, .profil p {
+        margin-left: 10%;
+    }
+
+    .formation, .card, .card2, .card4 {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .competences h2, .entreprise h2, .techno h1, .contact h1 {
+        margin-left: 15%;
+    }
+}
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 400px) {
+    nav {
+        background-color: #120d16;
+        padding: 0px;
+        margin: 0px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 200px;
+    }
+
+    .nav {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; /* Pour afficher les éléments en colonne */
+        padding: 0;
+        margin: 0;
+        font-size: 21px;
+        color: #fff;
+    }
+
+    .info {
+        height: 100vh;
+        position: relative;
+        background-image: url(../image/reseau.png);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vh;
+        margin-left: 188px;
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .info h2 {
+        font-size: 24px;
+    }
+
+    .info p {
+        font-size: 18px;
+    }
+
+    .profil h1, .profil p {
+        margin-left: 5%;
+        font-size: 16px;
+    }
+
+    .formation, .card, .card2, .card4 {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .competences h2, .entreprise h2, .techno h1, .contact h1 {
+        margin-left: 5%;
+        font-size: 28px;
+    }
+
+    .carton {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .carton p {
+        font-size: 18px;
+    }
+    /* Pour les écrans de bureau (largeurs > 1200px) */
+@media only screen and (min-width: 1200px) {
+    nav {
+        width: 250px;
+    }
+
+    .info {
+        margin-left: 270px;
+    }
+
+    .profil h1, .profil p, .formation, .competences h2, .entreprise h2, .techno h1, .contact h1 {
+        margin-left: 20%;
+    }
+
+    .card, .card4 {
+        margin-left: 35%;
+    }
+}
+}

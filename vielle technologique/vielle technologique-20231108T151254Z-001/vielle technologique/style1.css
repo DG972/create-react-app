@@ -1,0 +1,49 @@
+body {
+	background-color:#FF1493;
+	margin:6px;
+   font-family:palatino;
+   float:left;  
+   font-family:'tw cen mt';
+   font-size:20px;
+}
+h3{
+	width:300px;
+	color:white;
+	font-family:'tw cen mt';
+}
+
+nav {
+    background-color: #333;
+	text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px; /* Espace entre les éléments liens */
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+ h1{
+	font-size:40px;
+	text-align:center;
+	
+}
+ol{
+	border-style:solid;
+	border-color:white;
+	font-family:arial;
+	border-width:20%;
+}
+p{
+   font-family:Arial;
+}

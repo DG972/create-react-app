@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image : url(imgduo/store.png);
+    background-size : cover;
+    font-family: 'Open Sans';
+    display: flex;
+}
+.Contact{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1000px;
+    margin-top: -40px;
+    font-size: larger;
+}
+.Contact:hover{
+    color: orange;
+} 
+.Accueil{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1200px;
+    margin-top: -41px;
+    font-size: larger;
+}
+.Accueil:hover{
+    color: orange;
+}
+.Store{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1400px;
+    margin-top: -39px;
+    font-size: larger;
+}
+.Store:hover{
+    color: orange;
+}
+.logoentreprise{
+    margin-top: -50px;
+}
+.minilogo{
+    margin-left: 90%;
+    margin-top: -65px;
+}
+.header{
+    margin-top: -10px;
+    width: 1920px;
+    height: 10%;
+    background-color: black;
+} 
+h1{
+    color: white;
+}
+form{
+	margin-top : 200px;
+	margin-left : -1250px;
+    min-width: 400px;
+    background-color: #ffffffad;
+    border-radius: 15px;
+    padding: 40px 60px;
+    height: 60%;
+    padding-bottom: 100px;
+}
+form h1{
+    text-align: center;
+}
+form .input1{
+    display: flex;
+    flex-direction: column;
+}
+form .input1 input[type="identifiant"],input[type="password"]{
+    background-color:white;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+form button{
+    padding: 15px 25px;
+    background-color: hwb(12 0% 0%);
+    color: white;
+
+}
+form p.compte{
+    text-align: center ;
+    margin-top: 200px;
+}
+.ligne{
+    width: 400px;
+    height: 5px;
+    background-color: #ffffffad;
+}
+form .Google{
+    background-color: #ffffff;
+    color: black;
+}
+form .minilogo2{
+    margin-top: -42px;
+    margin-left: 175px;
+}
+b{
+    color :hwb(12 0% 0%)
+}
+.successMessage{
+color: green; 
+text-align: center;
+margin-top: 10px;
+}

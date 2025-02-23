@@ -1,0 +1,121 @@
+body{
+    background-image: url(imgduo/contactbg.png);
+    font-family:"Open Sans"; 
+}
+.Contact{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1000px;
+    margin-top: -40px;
+    font-size: larger;
+}
+.Contact:hover{
+    color: orange;
+}
+.Accueil{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1200px;
+    margin-top: -41px;
+    font-size: larger;
+}
+.Accueil:hover{
+    color: orange;
+}
+.Store{
+    font-family:'Open Sans';
+    color: white;
+    margin-left: -1400px;
+    margin-top: -41px;
+    font-size: larger;
+}
+.Store:hover{
+    color: orange;
+}
+.logoentreprise{
+    margin-top: -50px;
+}
+.minilogo{
+    margin-left: 90%;
+    margin-top: -70px;
+}
+
+.header{
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+	margin-left: -25px;
+    width: 1920px;
+    height: 10%;
+    background-color: black;
+} 
+.element{
+    margin-left: 50%;
+    border-radius: 10px;
+    max-width: 300px;
+    background-color: white;
+	margin-top :  70px;
+    padding: 15%;
+    height: 11%;
+    padding-bottom: 23%;
+}
+form .input1{
+    display: flex;
+    flex-direction: column;
+    margin-top: -130px;
+    margin-left: 200px;
+}
+form .input1 input[type="Email"],input[type="Nom"],input[type="Prenom"],input[type="Corps"]{
+    background-color:white;
+    color: black;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 40px;
+    width: 700px;
+    margin-left: 830px;
+
+}
+p{
+    margin-top: -700px;
+    font-size: xx-large;
+    color :rgb(248, 110, 30);
+    margin-left: 1250px;
+}
+form button{
+    padding: 15px 25px;
+    background-color: hwb(12 0% 0%);
+    color: white;
+    width: 140px;
+    margin-left: 830px;
+    margin-top: -20px;
+}
+.position{
+    margin-left: 1105px;
+}
+.positiontxt{
+    margin-top: -480px;
+    margin-left: 380px;
+    font-size: larger;
+    text-align: center;
+}
+.truck{
+    margin-top: -40px;
+    margin-left: 1580px;
+}
+.trucktxt{
+    margin-top: -80px;
+    margin-left: 1330px;
+    font-size: larger;
+    text-align: center;
+}
+.Email{
+    margin-left: 160px;
+    margin-top: 100px;
+}
+
+.Emailtxt{
+    margin-top: 45px;
+    font-size: larger;
+    margin-left: 250px;
+    color: white;
+}

@@ -1,0 +1,58 @@
+body {
+	background-color:white;
+	margin:6px;
+   font-family:palatino;
+   float:left;  
+   font-family:'tw cen mt';
+   font-size:20px;
+}
+h3{
+	width:300px;
+	color:red;
+	font-family:'tw cen mt';
+}
+
+nav {
+    background-color: #333;
+	text-align:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px; /* Espace entre les éléments liens */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+ h1{
+	font-size:40px;
+	text-align:center;
+}
+
+footer {
+	
+    background-color:#00CED1 ; /* Couleur de fond du pied de page */
+    color:white; /* Couleur du texte du pied de page */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+p{
+ color:black;
+ font-size:30px;
+}
+b{
+	color:white;
+}
+	
