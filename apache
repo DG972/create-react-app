@@ -1,2 +1,0 @@
-# Active PHP sur les fichiers .php
-AddHandler application/x-httpd-php .php
