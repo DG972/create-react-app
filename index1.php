@@ -1,3 +1,31 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupération et nettoyage des données du formulaire
+    $name = htmlspecialchars(strip_tags($_POST["name"]));
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $subject = htmlspecialchars(strip_tags($_POST["subject"]));
+    $message = htmlspecialchars(strip_tags($_POST["message"]));
+
+    // Validation de l'email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $error = "Adresse email invalide.";
+    } else {
+        // Envoi de l'email
+        $to = "davidgaillard250@gmail.com";  // Remplacez par votre adresse email
+        $headers = "From: $email\r\n";
+        $headers .= "Reply-To: $email\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        
+        // Si l'email a été envoyé avec succès
+        if (mail($to, $subject, $message, $headers)) {
+            $success = "Votre message a été envoyé avec succès.";
+        } else {
+            $error = "Une erreur est survenue. Veuillez réessayer plus tard.";
+        }
+    }
+}
+?>
+
 <html>
     <head>
         <link rel="stylesheet" href="css/index.css">
