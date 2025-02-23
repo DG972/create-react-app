@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet"media="all" href="../css1/Inscription.css" />
+            <script>
+                  function connexion() {
+                        var email = document.getElementById('email').value;
+                        var password = document.getElementById('password').value;
+                        var messageElement = document.getElementById('message');
+                        if (email === '') {
+                           messageElement.innerText = 'Veuillez saisir un nom d\'utilisateur';
+                       } else if (password === '') {
+                           messageElement.innerText = 'Veuillez saisir un mot de passe';
+                        } else if (email === 'utilisateur@example.com' && password === 'motdepasse') {
+                            messageElement.innerText = 'Connexion réussie !';
+                        } else {
+                            essageElement.innerText = 'Échec de la connexion. Vérifiez vos identifiants.';
+                    }
+                }
+
+            </script>
+    </head>
+            <body>
+                <center>
+                    <div class="header"></div>
+                        <div class="minilogo" style="cursor : pointer" onclick="window.location.href='Panier.html'">
+                            <img src="imgduo/iconpn.png" width="50px">
+                        </div>
+                        <p class="Contact" onclick="window.location.href='Contact.html'">Contact</p>
+                        <p class="Accueil"onclick="window.location.href='veille2.html'">Accueil</p>
+                        <p class="Store" onclick="window.location.href='store.html'">Store</p>
+                                <div class="logoentreprise">
+                                    <img src="imgduo/logoentreprise.jpg" width="200px">
+                                </div>
+                </center>
+
+<form  method="post" action="Inscription.php">
+                            <h1>Inscription</h1>
+                                <div class="input1">
+                                    <label for="nom">Votre nom</label>
+                                    <input id="nom" type="text" name="nom"placeholder="Entrer votre nom" required>
+                                    </br>
+                                    <label for="prenom">Votre prenom</label>
+                                    <input id="Prenom" type="text" name="prenom"placeholder="Prenom" required>
+                                    </br>
+                                    <label for="password">password</label>
+                                    <input  id="password" type="password"name="password" placeholder="Mot de passe" required>
+                                     <label for="email">Votre email</label>  
+                                    <input id="email" type="identifiant" name="email"placeholder="Email" required>
+
+    
+									
+                                </div>
+                                <p class = "compte">Vous avez un compte, <b>Connectez-vous</b> !</p>
+                                <div align ="center">
+                                    <button type="submit">Connexion</button>
+                                    <button type="submit" class="Google">  Connexion Google</button>
+                                </div>
+                                    <div class="minilogo2">
+                                        <img src ="imgduo/googlelogo.png" width="35px">
+                                    </div>
+                                    <p id="message" style="color: red; text-align: center;"></p>
+                                    <div id="successMessage"></div>
+                    </form>                    
+         </body>
+</html>

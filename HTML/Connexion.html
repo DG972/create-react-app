@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" media="all" href="../css1/Connexion.css" />
+        <script>
+            function checkForm() {
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                var messageElement = document.getElementById('message');
+
+                if (email === '') {
+                    messageElement.innerText = 'Veuillez saisir un nom utilisateur';
+                    return false;
+                } else if (password === '') {
+                    messageElement.innerText = 'Veuillez saisir un mot de passe';
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+            <div class="header"></div>
+            <div class="minilogo" style="cursor: pointer" onclick="window.location.href='Panier.php'">
+                <img src="imgduo/iconpn.png" width="50px">
+            </div>
+            <p class="Contact" onclick="window.location.href='Contact.html'">Contact</p>
+            <p class="Accueil" onclick="window.location.href='veille2.html'">Accueil</p>
+            <p class="Store" onclick="window.location.href='store.php'">Store</p>
+            <div class="logoentreprise">
+                <img src="imgduo/logoentreprise.jpg" width="200px">
+            </div>
+        </center>
+
+        <form action="Connexion.php" method="POST">
+
+            <h1>Connexion</h1>
+            <div class="input1">
+                <input id="email" type="text" autocomplet="off" name="email" placeholder="email" required>
+            </br>
+                <input id="password" type="password" autocomplet="off" name="password" placeholder="password" required>
+            </div>
+            <p class="compte">Si vous n'avez pas de compte, <a href="inscription.html"><b>Inscrivez-vous</b></a></p>
+            <div align="center">
+                <button type="submit">connexion</button>
+                <button type="submit" class="Google">Connexion Google</button>
+            </div>
+            <div class="minilogo2">
+                <img src="imgduo/googlelogo.png" width="35px">
+            </div>
+            <p id="message" style="color: red; text-align: center;"></p>
+            <div id="successMessage"></div>
+        </form>
+    </body>
+</html>
