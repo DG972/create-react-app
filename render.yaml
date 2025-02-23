@@ -1,9 +1,0 @@
-sservices:
-  - type: web
-    name: php-app
-    env: docker
-    plan: free
-    buildCommand: "docker build -t php-app ."     # Construire l'image Docker
-    startCommand: "docker run -p 80:80 php-app"   # Exécuter l'image Docker et exposer le port 80 (par défaut pour HTTP)
-    regions:
-      - oregon  # Choisis la région où déployer ton service
