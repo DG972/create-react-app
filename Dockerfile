@@ -1,17 +1,11 @@
-# Utiliser une image PHP officielle
-FROM php:8.0-cli
+# Utiliser l'image officielle PHP avec Apache
+FROM php:8.1-apache
 
-# Définir le répertoire de travail
-WORKDIR /var/www/index.html
+# Copier les fichiers dans le répertoire d'Apache
+COPY . /var/www/html/
 
-# Copier tous les fichiers de ton projet dans le conteneur Docker
-COPY . .
+# Installer l'extension mysqli si nécessaire
+RUN docker-php-ext-install mysqli
 
 # Exposer le port 80 (le port par défaut pour le HTTP)
 EXPOSE 80
-
-# Commande pour démarrer le serveur PHP
-CMD ["php", "-S", "0.0.0.0:80", "index.php"]
-FROM php:8.1-apache
-COPY . /var/www/index.html/
-RUN docker-php-ext-install mysqli
