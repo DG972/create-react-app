@@ -2,7 +2,7 @@
 FROM php:8.0-cli
 
 # Définir le répertoire de travail
-WORKDIR /var/www/html
+WORKDIR /var/www/index.html
 
 # Copier tous les fichiers de ton projet dans le conteneur Docker
 COPY . .
@@ -13,5 +13,5 @@ EXPOSE 80
 # Commande pour démarrer le serveur PHP
 CMD ["php", "-S", "0.0.0.0:80", "index.php"]
 FROM php:8.1-apache
-COPY . /var/www/html/
+COPY . /var/www/index.html/
 RUN docker-php-ext-install mysqli
