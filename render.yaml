@@ -1,9 +1,0 @@
-services:
-  - type: web
-    name: php-app
-    env: php
-    plan: free
-    buildCommand: "echo 'Aucune étape de construction requise'"
-    startCommand: "php -S 0.0.0.0:3000 index1.php"
-    regions:
-      - oregon
